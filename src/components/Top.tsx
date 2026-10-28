@@ -12,8 +12,8 @@ export function Top() {
     return (
         <header className='py-4 px-8 flex w-full items-center bg-white'>
             <div className='flex items-center w-full'>
-                <img src={logo} alt="Logo de santa cruz" className='h-24 w-24' />
-                <nav className='flex items-center gap-6 ml-4'>
+                <img src={logo} alt="Logo de santa cruz" className='h-24 w-24 object-contain' />
+                <nav className='flex items-center gap-6 ml-4 font-bold text-sm tracking-wider'>
                     {/* SKATE */}
                     <div className='relative'>
                         <button
@@ -23,7 +23,7 @@ export function Top() {
                             SKATE
                         </button>
                         {openMenu === 'skate' && (
-                            <div className='absolute top-full left-0 bg-white shadow-lg py-2 min-w-[150px]'>
+                            <div className='absolute top-full left-0 bg-white shadow-lg py-2 min-w-[150px] z-50'>
                                 <div className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>BOARDS</div>
                                 <div className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>WHEELS</div>
                                 <div className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>TRUCKS</div>
@@ -40,7 +40,7 @@ export function Top() {
                             APPAREL
                         </button>
                         {openMenu === 'apparel' && (
-                            <div className='absolute top-full left-0 bg-white shadow-lg py-2 min-w-[150px]'>
+                            <div className='absolute top-full left-0 bg-white shadow-lg py-2 min-w-[150px] z-50'>
                                 <div className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>MENS</div>
                                 <div className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>WOMENS</div>
                                 <div className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>KIDS & BABIES</div>
@@ -58,7 +58,7 @@ export function Top() {
                             COLLECTIONS
                         </button>
                         {openMenu === 'collections' && (
-                            <div className='absolute top-full left-0 bg-white shadow-lg py-2 min-w-[150px]'>
+                            <div className='absolute top-full left-0 bg-white shadow-lg py-2 min-w-[150px] z-50'>
                                 <div className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>NEW ARRIVALS</div>
                                 <div className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>LIMITED EDITION</div>
                             </div>
